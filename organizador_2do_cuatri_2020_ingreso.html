@@ -1,0 +1,2443 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<label>Seleccione las actividades que desea cursar y la comisión deseada.</label>
+		<form>
+			
+			<! -- Análisis -->
+			<input type="checkbox" id="check8101">
+			<label>Análisis Matemático II (8101)</label>
+					
+			<select id='lista8101'>
+				
+				<option value="" disabled selected hidden>Seleccione comisión.</option>
+				<script>
+					var analisis = {
+    "10": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "19:00",
+                "hasta": "21:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "21:00",
+                "hasta": "23:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Sábado",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Sábado",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "Gonzalez, Vardanega, Portocarrero",
+        "cupo": "35"
+    },
+    "11A": {
+        "horarios": [
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "16:00",
+                "hasta": "18:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "16:00",
+                "hasta": "18:00"
+            }
+        ],
+        "docentes": "Martins, Sirne, Centeno, Piñera, Zhang",
+        "cupo": "40"
+    },
+    "11B": {
+        "horarios": [
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "16:00",
+                "hasta": "18:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "16:00",
+                "hasta": "18:00"
+            }
+        ],
+        "docentes": "Lopez, Sirne, De Rossi, Rozenwasser",
+        "cupo": "40"
+    },
+    "12A": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "16:00",
+                "hasta": "18:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "16:00",
+                "hasta": "18:00"
+            }
+        ],
+        "docentes": "Juarez, Sirne, Vorobioff",
+        "cupo": "35"
+    },
+    "12B": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "16:00",
+                "hasta": "18:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "16:00",
+                "hasta": "18:00"
+            }
+        ],
+        "docentes": "Sirne, Crisi, Vicedo",
+        "cupo": "35"
+    },
+    "14A": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "18:00",
+                "hasta": "20:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "20:00",
+                "hasta": "22:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Viernes",
+                "desde": "18:00",
+                "hasta": "20:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Viernes",
+                "desde": "20:00",
+                "hasta": "22:00"
+            }
+        ],
+        "docentes": "Comas, Gualtieri, Oliva",
+        "cupo": "35"
+    },
+    "14B": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "18:00",
+                "hasta": "20:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "20:00",
+                "hasta": "22:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Viernes",
+                "desde": "18:00",
+                "hasta": "20:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Viernes",
+                "desde": "20:00",
+                "hasta": "22:00"
+            }
+        ],
+        "docentes": "Comas, Alvarez, Cristi",
+        "cupo": "35"
+    },
+    "15A": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "16:00",
+                "hasta": "18:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "16:00",
+                "hasta": "18:00"
+            }
+        ],
+        "docentes": "Centeno, Sassano",
+        "cupo": "35"
+    },
+    "15B": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "16:00",
+                "hasta": "18:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "16:00",
+                "hasta": "18:00"
+            }
+        ],
+        "docentes": "De Rossi, Sassano, Fages",
+        "cupo": "35"
+    },
+    "20A": {
+        "horarios": [
+            {
+                "tipo": "Práctica",
+                "dia": "Lunes",
+                "desde": "17:00",
+                "hasta": "19:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Lunes",
+                "desde": "19:00",
+                "hasta": "21:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "17:00",
+                "hasta": "19:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "19:00",
+                "hasta": "21:00"
+            }
+        ],
+        "docentes": "Estrin, Oliva, Seminara, Wilk",
+        "cupo": "35"
+    },
+    "20B": {
+        "horarios": [
+            {
+                "tipo": "Práctica",
+                "dia": "Lunes",
+                "desde": "17:00",
+                "hasta": "19:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Lunes",
+                "desde": "19:00",
+                "hasta": "21:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "17:00",
+                "hasta": "19:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "19:00",
+                "hasta": "21:00"
+            }
+        ],
+        "docentes": "Seminara, Lucuy, Palazón",
+        "cupo": "35"
+    },
+    "22": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "18:00",
+                "hasta": "20:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "20:00",
+                "hasta": "22:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "18:00",
+                "hasta": "20:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "20:00",
+                "hasta": "22:00"
+            }
+        ],
+        "docentes": "Amoreo, García, Centeno, Venturiello",
+        "cupo": "35"
+    },
+    "2A": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "07:00",
+                "hasta": "09:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "07:00",
+                "hasta": "09:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "09:00",
+                "hasta": "11:00"
+            }
+        ],
+        "docentes": "Garcia, Acero, Petrovich",
+        "cupo": "35"
+    },
+    "2B": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "07:00",
+                "hasta": "09:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "07:00",
+                "hasta": "09:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "09:00",
+                "hasta": "11:00"
+            }
+        ],
+        "docentes": "Lopez, Acero, Pereyra",
+        "cupo": "35"
+    },
+    "3": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "16:00",
+                "hasta": "18:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Viernes",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Viernes",
+                "desde": "16:00",
+                "hasta": "18:00"
+            }
+        ],
+        "docentes": "De Rossi, Gigola, Romero",
+        "cupo": "35"
+    },
+    "4A": {
+        "horarios": [
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Viernes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Viernes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "Zitto, Gomez, Szuplat",
+        "cupo": "35"
+    },
+    "4B": {
+        "horarios": [
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Viernes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Viernes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "Rosito, Zitto, Durante",
+        "cupo": "35"
+    },
+    "5A": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Viernes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Viernes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "Maulhardt, Gomez, Puebla",
+        "cupo": "35"
+    },
+    "5B": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Viernes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Viernes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "Maulhardt, Monzon, Palau",
+        "cupo": "35"
+    },
+    "6A": {
+        "horarios": [
+            {
+                "tipo": "Práctica",
+                "dia": "Lunes",
+                "desde": "13:00",
+                "hasta": "15:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Lunes",
+                "desde": "15:00",
+                "hasta": "17:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "13:00",
+                "hasta": "15:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "15:00",
+                "hasta": "17:00"
+            }
+        ],
+        "docentes": "Sola, Juarez",
+        "cupo": "35"
+    },
+    "6B": {
+        "horarios": [
+            {
+                "tipo": "Práctica",
+                "dia": "Lunes",
+                "desde": "13:00",
+                "hasta": "15:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Lunes",
+                "desde": "15:00",
+                "hasta": "17:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "13:00",
+                "hasta": "15:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "15:00",
+                "hasta": "17:00"
+            }
+        ],
+        "docentes": "Soprano, Juarez, Oliva",
+        "cupo": "35"
+    },
+    "8": {
+        "horarios": [
+            {
+                "tipo": "Práctica",
+                "dia": "Lunes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Lunes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "Di Iorio, Bibiloni",
+        "cupo": "35"
+    },
+    "9": {
+        "horarios": [
+            {
+                "tipo": "Práctica",
+                "dia": "Lunes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Lunes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "Unger, Tilli",
+        "cupo": "35"
+    },
+    "24": {
+        "horarios": [
+            {
+                "tipo": "Teórico",
+                "dia": "Lunes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Lunes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "Bergamini, Oliva, Regojo",
+        "cupo": "35"
+    }
+};
+	
+					for(var propt in analisis) {
+						var docentes = analisis[propt]["docentes"];
+						
+						document.write('<option value="' + propt +'">' + propt + " - " + docentes + '</option>');
+					}
+				</script>
+		
+			</select><br>
+			<! -- Análisis -->			
+			
+			<! -- Física -->
+			<input type="checkbox" id="check8201">
+			<label>Física I (8201)</label>
+			
+			<select id='lista8201'>
+				
+				<option value="" disabled selected hidden>Seleccione comisión.</option>
+				<script>
+					var fisica = {
+    "1": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Lunes",
+                "desde": "13:00",
+                "hasta": "17:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Miércoles",
+                "desde": "13:00",
+                "hasta": "17:00"
+            }
+        ],
+        "docentes": "Indelicato, Repetto, Nuñez, Raggio, Reboredo",
+        "cupo": "45"
+    },
+    "2": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Martes",
+                "desde": "08:00",
+                "hasta": "12:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Viernes",
+                "desde": "08:00",
+                "hasta": "12:00"
+            }
+        ],
+        "docentes": "Viñales, Ferrini, Leguiza, Mendieta, Piñera",
+        "cupo": "45"
+    },
+    "3": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Lunes",
+                "desde": "08:00",
+                "hasta": "12:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Miércoles",
+                "desde": "08:00",
+                "hasta": "12:00"
+            }
+        ],
+        "docentes": "Reboredo, Repetto, Vazquez",
+        "cupo": "45"
+    },
+    "4": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Martes",
+                "desde": "15:00",
+                "hasta": "19:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Jueves",
+                "desde": "15:00",
+                "hasta": "19:00"
+            }
+        ],
+        "docentes": "Chiabrando, Barasch, Anze, Condori, Gonzalez",
+        "cupo": "45"
+    },
+    "6": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Martes",
+                "desde": "19:00",
+                "hasta": "23:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Jueves",
+                "desde": "19:00",
+                "hasta": "23:00"
+            }
+        ],
+        "docentes": "Garcia, Moreno, Quiroga, Vilaseca",
+        "cupo": "45"
+    },
+    "7": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Lunes",
+                "desde": "19:00",
+                "hasta": "23:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Miércoles",
+                "desde": "19:00",
+                "hasta": "23:00"
+            }
+        ],
+        "docentes": "Daneri, Carrara, Canero, Prario",
+        "cupo": "45"
+    },
+    "8": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Martes",
+                "desde": "19:00",
+                "hasta": "23:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Jueves",
+                "desde": "19:00",
+                "hasta": "23:00"
+            }
+        ],
+        "docentes": "Martinez, Suarez, Ferrini, Daneri, Di Benedetto",
+        "cupo": "45"
+    },
+    "9": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Miércoles",
+                "desde": "15:00",
+                "hasta": "19:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Viernes",
+                "desde": "15:00",
+                "hasta": "19:00"
+            }
+        ],
+        "docentes": "Indelicato, Veiras, Balbi, Migliorisis",
+        "cupo": "45"
+    },
+    "10": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Lunes",
+                "desde": "13:00",
+                "hasta": "17:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Jueves",
+                "desde": "13:00",
+                "hasta": "17:00"
+            }
+        ],
+        "docentes": "Sola, Cornejo, Papa, Petrovich, Strusiat",
+        "cupo": "45"
+    },
+    "11": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Martes",
+                "desde": "09:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Jueves",
+                "desde": "09:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "Camuyrano, Fontana, Hernandez",
+        "cupo": "45"
+    },
+    "13": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Miércoles",
+                "desde": "08:00",
+                "hasta": "12:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Viernes",
+                "desde": "08:00",
+                "hasta": "12:00"
+            }
+        ],
+        "docentes": "Duplaa, Chiabrando, Barber, Rivas",
+        "cupo": "45"
+    },
+    "14": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Lunes",
+                "desde": "08:00",
+                "hasta": "12:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Miércoles",
+                "desde": "08:00",
+                "hasta": "12:00"
+            }
+        ],
+        "docentes": "Bellocq, Corsini, Nuñez, Toscani",
+        "cupo": "45"
+    },
+    "15": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Martes",
+                "desde": "09:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Jueves",
+                "desde": "09:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "Rossi, Conde, Ferrari, Sola",
+        "cupo": "45"
+    },
+    "16": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Martes",
+                "desde": "09:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Jueves",
+                "desde": "09:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "Cebreiro, Boschan, Bellocq, Zalcman",
+        "cupo": "45"
+    },
+    "17": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Lunes",
+                "desde": "08:00",
+                "hasta": "12:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Miércoles",
+                "desde": "08:00",
+                "hasta": "12:00"
+            }
+        ],
+        "docentes": "Miralles, Garea, Auliel",
+        "cupo": "45"
+    },
+    "SP1": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Jueves",
+                "desde": "17:00",
+                "hasta": "19:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Jueves",
+                "desde": "19:00",
+                "hasta": "21:00"
+            }
+        ],
+        "docentes": "Corach, Barasch, Brumovsky, Racero",
+        "cupo": "45"
+    },
+    "SP2": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Martes",
+                "desde": "15:00",
+                "hasta": "17:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Martes",
+                "desde": "17:00",
+                "hasta": "19:00"
+            }
+        ],
+        "docentes": "Villafañe, Dadamia, Gomez, Muñoz, Robledo",
+        "cupo": "45"
+    }
+	};
+					for(var propt in fisica) {
+						var docentes = fisica[propt]["docentes"];
+						
+						document.write('<option value="' + propt +'">' + propt + " - " + docentes + '</option>');
+					};
+				</script>
+			</select><br>
+			<! -- Física -->
+			
+			<! -- Algoritmos -->
+			<input type="checkbox" id="check9511">
+			<label>Algoritmos y Programación I (9511)</label>
+			
+			<select id='lista9511'>
+				
+				<option value="" disabled selected hidden>Seleccione comisión.</option>
+				<script>
+					var algoritmos = {
+    "01-Cardozo": {
+        "horarios": [
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "19:00",
+                "hasta": "23:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Sábado",
+                "desde": "09:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "Roasio, Cardozo, Sanz",
+        "cupo": "110"
+    },
+    "02-Essaya": {
+        "horarios": [
+            {
+                "tipo": "Teórica Obligatoria",
+                "dia": "Lunes",
+                "desde": "14:00",
+                "hasta": "18:00"
+            },
+            {
+                "tipo": "Práctica Obligatoria",
+                "dia": "Viernes",
+                "desde": "15:00",
+                "hasta": "19:00"
+            }
+        ],
+        "docentes": "Essaya, Mazzer, Santisi",
+        "cupo": "20"
+    },
+    "03-Azcurra": {
+        "horarios": [
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Miércoles",
+                "desde": "16:00",
+                "hasta": "19:00"
+            },
+            {
+                "tipo": "Teórico Práctica Obligatoria",
+                "dia": "Miércoles",
+                "desde": "19:00",
+                "hasta": "22:00"
+            }
+        ],
+        "docentes": "Salvia, Azcurra, Bianchi",
+        "cupo": "40"
+    }
+	};
+					for(var propt in algoritmos) {
+						var docentes = algoritmos[propt]["docentes"];
+						
+						document.write('<option value="' + propt +'">' + propt + " - " + docentes + '</option>');
+					};
+				</script>
+			</select><br>
+			<! -- Algoritmos -->
+			
+			<! -- Algebra -->
+			<input type="checkbox" id="check8102">
+			<label>Álgebra II (8102)</label>
+			
+			<select id='lista8102'>
+				
+				<option value="" disabled selected hidden>Seleccione comisión.</option>
+				<script>
+					var algebra = {
+    "10": {
+        "horarios": [
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "11:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Viernes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Viernes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "Giribet, Fittipaldi, Gelpi",
+        "cupo": "35"
+    },
+    "13": {
+        "horarios": [
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "13:00",
+                "hasta": "15:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "15:00",
+                "hasta": "17:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Viernes",
+                "desde": "13:00",
+                "hasta": "15:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Viernes",
+                "desde": "15:00",
+                "hasta": "17:00"
+            }
+        ],
+        "docentes": "Peralta, Seinhart, Herrman, Marti",
+        "cupo": "43"
+    },
+    "15A": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Lunes",
+                "desde": "17:00",
+                "hasta": "19:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Lunes",
+                "desde": "19:00",
+                "hasta": "21:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "17:00",
+                "hasta": "19:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "19:00",
+                "hasta": "21:00"
+            }
+        ],
+        "docentes": "Chorny, Alvarez, Catuogno",
+        "cupo": "32"
+    },
+    "15B": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Lunes",
+                "desde": "17:00",
+                "hasta": "19:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Lunes",
+                "desde": "19:00",
+                "hasta": "21:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "17:00",
+                "hasta": "19:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "19:00",
+                "hasta": "21:00"
+            }
+        ],
+        "docentes": "Alvarez, Galvan",
+        "cupo": "32"
+    },
+    "17": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "07:00",
+                "hasta": "09:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "07:00",
+                "hasta": "09:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "09:00",
+                "hasta": "11:00"
+            }
+        ],
+        "docentes": "Orecchia, Calzon, Mandieta",
+        "cupo": "32"
+    },
+    "19A": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Lunes",
+                "desde": "13:00",
+                "hasta": "15:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Lunes",
+                "desde": "15:00",
+                "hasta": "17:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "13:00",
+                "hasta": "15:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "15:00",
+                "hasta": "17:00"
+            }
+        ],
+        "docentes": "Prelat, Palazón, Roberts",
+        "cupo": "35"
+    },
+    "19B": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Lunes",
+                "desde": "13:00",
+                "hasta": "15:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Lunes",
+                "desde": "15:00",
+                "hasta": "17:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "13:00",
+                "hasta": "15:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "15:00",
+                "hasta": "17:00"
+            }
+        ],
+        "docentes": "PRELAT, ENDELLI, GALVAN",
+        "cupo": "35"
+    },
+    "1A": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Lunes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Lunes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "PALACIOS, VARGAS, PALAU, SOSA MARINA",
+        "cupo": "58"
+    },
+    "1B": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Lunes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Lunes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "CABANA, VARGAS, TILLI",
+        "cupo": "58"
+    },
+    "2A": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "16:00",
+                "hasta": "18:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "16:00",
+                "hasta": "18:00"
+            }
+        ],
+        "docentes": "CONTINO, SARRIS, PRESENZA",
+        "cupo": "36"
+    },
+    "2B": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "16:00",
+                "hasta": "18:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "16:00",
+                "hasta": "18:00"
+            }
+        ],
+        "docentes": "SARRIS, CHARO, HERRMANN",
+        "cupo": "36"
+    },
+    "3": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "11:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Viernes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Viernes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "PERALTA, CAMMILLERI, FITTIPALDI",
+        "cupo": "38"
+    },
+    "4A": {
+        "horarios": [
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "LOPEZ, ALVAREZ",
+        "cupo": "36"
+    },
+    "4B": {
+        "horarios": [
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "LOPEZ, KLINGER, ROZENWASSER",
+        "cupo": "36"
+    },
+    "6A": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Lunes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Lunes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "BOGGI, PETROVICH, ZALCMAN",
+        "cupo": "56"
+    },
+    "6B": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Lunes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Lunes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "GARCIA, BOGGI, ROHDENBURG",
+        "cupo": "56"
+    },
+    "7A": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "MARTINS, ALVAREZ",
+        "cupo": "40"
+    },
+    "7B": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "11:00",
+                "hasta": "13:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "11:00",
+                "hasta": "13:00"
+            }
+        ],
+        "docentes": "VALDETTARO, MARTINS, ROZENWASSER",
+        "cupo": "40"
+    },
+    "9": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "18:00",
+                "hasta": "20:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "20:00",
+                "hasta": "22:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "18:00",
+                "hasta": "20:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "20:00",
+                "hasta": "22:00"
+            }
+        ],
+        "docentes": "BUCELLO, AGUERRE, SCORINI",
+        "cupo": "35"
+    },
+    "23": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Lunes",
+                "desde": "07:00",
+                "hasta": "09:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Lunes",
+                "desde": "09:00",
+                "hasta": "11:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "07:00",
+                "hasta": "09:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "09:00",
+                "hasta": "11:00"
+            }
+        ],
+        "docentes": "PALAU, GRYNBERG, CASSANI, OTERO",
+        "cupo": "70"
+    },
+    "24": {
+        "horarios": [
+            {
+                "tipo": "Teórica",
+                "dia": "Lunes",
+                "desde": "15:00",
+                "hasta": "17:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Lunes",
+                "desde": "17:00",
+                "hasta": "19:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Miércoles",
+                "desde": "15:00",
+                "hasta": "17:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Miércoles",
+                "desde": "17:00",
+                "hasta": "19:00"
+            }
+        ],
+        "docentes": "MUSZKATS, ORECCHIA, PERALTA",
+        "cupo": "45"
+    },
+    "25": {
+        "horarios": [
+            {
+                "tipo": "Práctica",
+                "dia": "Martes",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Martes",
+                "desde": "16:00",
+                "hasta": "18:00"
+            },
+            {
+                "tipo": "Práctica",
+                "dia": "Jueves",
+                "desde": "14:00",
+                "hasta": "16:00"
+            },
+            {
+                "tipo": "Teórica",
+                "dia": "Jueves",
+                "desde": "16:00",
+                "hasta": "18:00"
+            }
+        ],
+        "docentes": "MEDINA, HERRMANN, MAILING",
+        "cupo": "45"
+    }
+	};
+					for(var propt in algebra) {
+						var docentes = algebra[propt]["docentes"];
+						
+						document.write('<option value="' + propt +'">' + propt + " - " + docentes + '</option>');
+					};
+				</script>
+			</select><br>
+			<! -- Algebra -->
+						
+		</form>
+		
+		<button onclick="actualizarTabla()">Actualizar tabla.</button>
+		<button onclick="guardarOpcion()">Guardar opción.</button>		
+
+	</head>	
+	
+	<body>			
+		
+		<table id="tabla">
+			<style>
+				table, th, td {
+				border: 1px solid black;
+				width: 1000px
+				}
+		</style>
+		
+		<colgroup>
+			<col style="width: 50px">
+			<col style="width: 200px">
+			<col style="width: 300px">
+			<col style="width: 300px">
+			<col style="width: 300px">
+			<col style="width: 300px">
+			<col style="width: 300px">
+			<col style="width: 300px">
+		</colgroup>
+		
+		
+			<thead>
+				<tr>
+					<th></th>
+					<th>Lunes</th>
+					<th>Martes</th>
+					<th>Miércoles</th>
+					<th>Jueves</th>
+					<th>Viernes</th>
+					<th>Sábado</th>
+				</tr>
+			</thead>
+		
+			<tbody>
+				<tr>
+					<td>07:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>07:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>08:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>08:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>09:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>09:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>10:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>10:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>11:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>11:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>12:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>12:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>13:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>13:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>14:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>14:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>15:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>15:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>16:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>16:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>17:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>17:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>18:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>18:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>19:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>19:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>20:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>20:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>21:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>21:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>22:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>22:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td>23:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>				
+				
+			</tbody>
+
+		</table>
+
+		<script>
+			
+			var miTabla = document.getElementById('tabla');
+			
+			var indiceTabla = {
+    "07:00": 1,
+    "07:30": 2,
+    "08:00": 3,
+    "08:30": 4,
+    "09:00": 5,
+    "09:30": 6,
+    "10:00": 7,
+    "10:30": 8,
+    "11:00": 9,
+    "11:30": 10,
+    "12:00": 11,
+    "12:30": 12,
+    "13:00": 13,
+    "13:30": 14,
+    "14:00": 15,
+    "14:30": 16,
+    "15:00": 17,
+    "15:30": 18,
+    "16:00": 19,
+    "16:30": 20,
+    "17:00": 21,
+    "17:30": 22,
+    "18:00": 23,
+    "18:30": 24,
+    "19:00": 25,
+    "19:30": 26,
+    "20:00": 27,
+    "20:30": 28,
+    "21:00": 29,
+    "21:30": 30,
+    "22:00": 31,
+    "22:30": 32,
+    "23:00": 33
+	};
+			
+			var indiceTablaDias = {
+    "Lunes": 1,
+    "Martes": 2,
+    "Miércoles": 3,
+    "Jueves": 4,
+    "Viernes": 5,
+    "Sábado": 6,
+    "Domingo": 7,
+	};
+			
+			function actualizarTabla () {
+				
+				for (var i = 1; i < 34; i++) {
+					for (var j = 1; j < 7; j++) {
+						miTabla.rows[i].cells[j].innerHTML = "";
+						miTabla.rows[i].cells[j].style.backgroundColor = 'white';
+					};			
+				};
+				
+				if (document.getElementById('check8101').checked) {
+					
+					var sel = document.getElementById('lista8101').value;
+
+					var horarios_am = analisis[sel]["horarios"];
+					
+					var c = 0
+					
+					for (var a in horarios_am) {
+						var dia = horarios_am[a]["dia"];
+						var dia_indice = indiceTablaDias[dia];
+						var desde = horarios_am[a]["desde"];				
+						var fila_desde = indiceTabla[desde];
+						var hasta = horarios_am[a]["hasta"];
+						var fila_hasta = indiceTabla[hasta];
+						var tipo = horarios_am[a]["tipo"];
+						var inicial_tipo = tipo.split("")[0];
+						for (var fila = fila_desde; fila < fila_hasta; fila ++) {
+							if (miTabla.rows[fila].cells[dia_indice].innerHTML != "") {
+								if (c == 0) {
+									alert("Hay superposición el " + dia);
+									c++;
+								} else {}
+							} else {
+								miTabla.rows[fila].cells[dia_indice].innerHTML = "AM II - " + inicial_tipo;
+								miTabla.rows[fila].cells[dia_indice].style.backgroundColor = '#ff9933';
+							};
+						};				
+					};
+				};
+				
+				if (document.getElementById('check8201').checked) {
+					
+					var sel = document.getElementById('lista8201').value;
+
+					var horarios_fi = fisica[sel]["horarios"];
+					
+					var d = 0
+					
+					for (var a in horarios_fi) {
+						var dia = horarios_fi[a]["dia"];
+						var dia_indice = indiceTablaDias[dia];
+						var desde = horarios_fi[a]["desde"];				
+						var fila_desde = indiceTabla[desde];
+						var hasta = horarios_fi[a]["hasta"];
+						var fila_hasta = indiceTabla[hasta];
+						var tipo = horarios_fi[a]["tipo"];
+						var inicial_tipo = tipo.split("")[0];
+						for (var fila = fila_desde; fila < fila_hasta; fila ++) {
+							if (miTabla.rows[fila].cells[dia_indice].innerHTML != "") {
+								if (d == 0) {
+									alert("Hay superposición el " + dia);
+									d++;
+								} else {}
+							} else {
+								miTabla.rows[fila].cells[dia_indice].innerHTML = "Fis I - " + inicial_tipo;
+								miTabla.rows[fila].cells[dia_indice].style.backgroundColor = '#6699ff';		
+							}		
+						};				
+					};
+				};
+			
+				if (document.getElementById('check9511').checked) {
+					
+					var sel = document.getElementById('lista9511').value;
+
+					var horarios_al = algoritmos[sel]["horarios"];
+					
+					var e = 0
+					
+					for (var a in horarios_al) {
+						var dia = horarios_al[a]["dia"];
+						var dia_indice = indiceTablaDias[dia];
+						var desde = horarios_al[a]["desde"];				
+						var fila_desde = indiceTabla[desde];
+						var hasta = horarios_al[a]["hasta"];
+						var fila_hasta = indiceTabla[hasta];
+						var tipo = horarios_al[a]["tipo"];
+						var inicial_tipo = tipo.split("")[0];
+						for (var fila = fila_desde; fila < fila_hasta; fila ++) {
+							if (miTabla.rows[fila].cells[dia_indice].innerHTML != "") {
+								if (e == 0) {
+									alert("Hay superposición el " + dia);
+									e++;
+								} else {}
+							} else {
+								miTabla.rows[fila].cells[dia_indice].innerHTML = "AyP I - " + inicial_tipo;
+								miTabla.rows[fila].cells[dia_indice].style.backgroundColor = '#99ff99';		
+							}		
+						};				
+					};
+				};				
+			
+				if (document.getElementById('check8102').checked) {
+					
+					var sel = document.getElementById('lista8102').value;
+
+					var horarios_ag = algebra[sel]["horarios"];
+					
+					var f = 0
+					
+					for (var a in horarios_ag) {
+						var dia = horarios_ag[a]["dia"];
+						var dia_indice = indiceTablaDias[dia];
+						var desde = horarios_ag[a]["desde"];				
+						var fila_desde = indiceTabla[desde];
+						var hasta = horarios_ag[a]["hasta"];
+						var fila_hasta = indiceTabla[hasta];
+						var tipo = horarios_ag[a]["tipo"];
+						var inicial_tipo = tipo.split("")[0];
+						
+						for (var fila = fila_desde; fila < fila_hasta; fila ++) {
+							if (miTabla.rows[fila].cells[dia_indice].innerHTML != "") {
+								if (f == 0) {
+									alert("Hay superposición el " + dia);
+									f++;
+								} else {}																								
+							} else {
+								miTabla.rows[fila].cells[dia_indice].innerHTML = "Alg II - " + inicial_tipo;
+								miTabla.rows[fila].cells[dia_indice].style.backgroundColor = '#ff99ff';		
+							}		
+						};				
+					};
+				};			
+						
+			};
+				
+			
+		</script>
+
+		<div id='opciones' style='padding: 5px; border: 3px; border-style: solid'>
+			
+			<label>Tus opciones de inscripción.</label>
+			
+			<script>
+		
+				var node = document.createElement("P");
+			
+				function guardarOpcion () {
+					
+					var list = document.createElement("LI");
+				
+					if (document.getElementById('check8101').checked) {
+						var comision = document.getElementById('lista8101').value;
+						var mensaje = document.createTextNode("Análisis I: " + comision + " / ");
+						list.appendChild(mensaje);
+					};
+				
+					if (document.getElementById('check8201').checked) {
+						var comision = document.getElementById('lista8201').value;
+						var mensaje = document.createTextNode("Física II: " + comision + " / ");
+						list.appendChild(mensaje);
+					};
+					
+					if (document.getElementById('check9511').checked) {
+						var comision = document.getElementById('lista9511').value;
+						var mensaje = document.createTextNode("Algoritmos I: " + comision + " / ");
+						list.appendChild(mensaje);
+					};
+					
+					if (document.getElementById('check8102').checked) {
+						var comision = document.getElementById('lista8102').value;
+						var mensaje = document.createTextNode("Algebra II: " + comision + " / ");
+						list.appendChild(mensaje);
+					};
+						
+					node.appendChild(list);
+				};
+				
+				
+				document.getElementById('opciones').appendChild(node);	
+						
+			
+			
+			</script>
+			
+		</div>
+
+
+
+
+	</body>
+</html>
